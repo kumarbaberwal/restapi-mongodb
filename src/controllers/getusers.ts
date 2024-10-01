@@ -5,6 +5,7 @@ const url = "mongodb://localhost:27017/";
 
 
 export const  getusers = async(req: Request, res: Response) =>{
+    
     const client = new MongoClient(url);
 
     const db = await client.db('Auth');
