@@ -16,5 +16,4 @@ export const  getusers = async(req: Request, res: Response) =>{
     var result = await collection.find().toArray();
 
     res.json(result);
-
 };
